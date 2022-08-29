@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета любителя собак</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 class="header">Анкета любителя собак</h1>
+<div id="dog-form">
+<form action="/handler.php" method="post">
+    <ol>
+        <li>
+            <label for="userName">Введите ваше имя</label>
+            <input type="text" id="userName"/>
+        </li>
+        <li>
+            <label for="cause">Расскажите в паре предложений, почему вы любите собак</label> <br>
+            <textarea id="cause" placeholder="Рассказ пишите тут"></textarea>
+        </li>
+        <li>
+            <p>Каким породам собак вы отдаете предпочтение?</p>
+            <input type="checkbox" name="breadType" value="Мелкие"/> Мелкие <br>
+            <input type="checkbox" name="breadType" value="Средние"/> Средние <br>
+            <input type="checkbox" name="breadType" value="Крупные"/> Крупные <br>
+        </li>
+        <li>
+            <p>Есть ли у вас собака на данный момент?</p>
+            <input type="radio" value="true" name="dogAvailability" checked="checked"> Да <br>
+            <input type="radio" value="false" name="dogAvailability"> Нет <br>
+        </li>
+        <li>
+            <p>Выберите из списка качества, которые вы больше всего цените в собаках</p>
+            <select multiple="multiple" size="3">
+                <option selected>Верность</option>
+                <option>Пушистость</option>
+                <option>Способность догнать хвост</option>
+                <option>Игривость</option>
+            </select>
+        </li>
+        <li>
+            <p>Выберете из списка породу, которая вам нравится больше других</p>
+            <select>
+                <option>Шпиц</option>
+                <option>Чау-Чау</option>
+                <option>Джек рассел</option>
+                <option>Сиба ину</option>
+            </select>
+        </li>
+    </ol>
+    <button type="submit">Отправить</button>
+</form>
+</div>
+</body>
+</html>

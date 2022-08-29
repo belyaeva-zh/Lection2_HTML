@@ -1,0 +1,31 @@
+.header {
+ font-weight: bold;
+ font-family: 'DynaPuff', cursive;
+ font-family: 'Roboto', sans-serif;
+}
+p{
+    padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 900px
+}
+div{
+}
+#best_dog{
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    width: 1000px
+}
+#best_dog p{
+    width: 900px;
+}
+#dogs{
+    padding-left: 250px;
+}
+#dog-form{
+    border: dashed purple;
+    margin-right: 600px
+}
+input[type='text']{
+    width: 200px;
+}
+
